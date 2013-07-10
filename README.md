@@ -12,7 +12,7 @@ $ npm install cluster-bomb
 Then just create an instance, configure with options like number of workers, and create callbacks for `worker()` and `master()`
 
 ```js
-var clusterBomb = require('../');
+var clusterBomb = require('cluster-bomb');
 
 var bomb = clusterBomb();
 
