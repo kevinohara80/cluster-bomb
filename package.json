@@ -1,6 +1,6 @@
 {
   "name": "cluster-bomb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a node.js cluster management and monitoring system for explosive results",
   "main": "index.js",
   "scripts": {

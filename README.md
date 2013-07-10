@@ -39,6 +39,12 @@ bomb.master(function(cluster) {
 
 ## API
 
+* `configure(opts)`: Set your options hash
+* `worker(fn)`: Set the worker callback function. Callback contains a reference to the worker object.
+* `master(fn)`: Set the master callback function. Callback contains a reference to the cluster object.
+* `scale(num)`: Scale up your workers. (scale down coming soon)
+
+
 ## License
 
 MIT

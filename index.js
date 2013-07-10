@@ -65,13 +65,15 @@ ClusterBomb.prototype.cluster = function() {
   return cluster;
 }
 
-ClusterBomb.prototype.run = function() {
-  var that = this;
-  // exit on function call if it is a worker
+ClusterBomb.prototype.scale = function(num) {
   if(!cluster.isMaster) return;
-  this._initialRun = true;
+  if(typeof num !== 'number') throw new Error('num must be a number');
+  num = parseInt(num);
+  if(num < 0) {
+    // maybe kill one
+  } 
+  this._workers += num;
   this._forkWorkers();
-  return this;
 }
 
 /*******************************/
