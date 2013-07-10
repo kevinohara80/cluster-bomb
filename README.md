@@ -3,6 +3,8 @@ cluster-bomb
 
 a node.js cluster management and monitoring system for explosive results
 
+[![Build Status](https://travis-ci.org/kevinohara80/cluster-bomb.png)](https://travis-ci.org/kevinohara80/cluster-bomb)
+
 ## Usage
 
 ```bash
