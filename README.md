@@ -44,7 +44,7 @@ new worker (pid 94217)
 
 ## Restarts
 
-Setting `restart:true` will auto-restart dead workers. A 'restart event is also emitted'.
+Setting `restart:true` will auto-restart dead workers. A **restart** event is also emitted.
 
 ```js
 bomb.configure({
