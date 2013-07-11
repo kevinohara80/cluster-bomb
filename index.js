@@ -13,6 +13,7 @@ var ClusterBomb = function(opts) {
   if(opts) this.configure(opts);
 
   if(cluster.isMaster) {
+    // master setup
     cluster.on('exit', function(worker, code, signal) {
       if((that.workerCount() < that._workers) && that._restart === true ) {
         var n = that._workers - that.workerCount();
@@ -20,6 +21,8 @@ var ClusterBomb = function(opts) {
         that._forkWorkers();
       }
     });
+  } else {
+    // worker setup
   }
 }
 
@@ -77,7 +80,7 @@ ClusterBomb.prototype.scale = function(num) {
 }
 
 /*******************************/
-/* private functions           */
+/* private-ish functions       */
 /*******************************/
 
 ClusterBomb.prototype._forkWorkers = function() {

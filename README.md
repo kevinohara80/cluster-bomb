@@ -42,7 +42,7 @@ new worker (pid 94216)
 new worker (pid 94217)
 ```
 
-## Restarts
+### Restarts
 
 Setting `restart:true` will auto-restart dead workers. A **restart** event is also emitted.
 
@@ -87,7 +87,7 @@ restarting 1 workers
 launching worker with pid 95075
 ```
 
-## Scaling
+### Scaling
 
 You can even scale up your workers...
 
