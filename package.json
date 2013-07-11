@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
+  "engines" : { 
+    "node" : ">=0.8.0" 
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/kevinohara80/cluster-bomb.git"
